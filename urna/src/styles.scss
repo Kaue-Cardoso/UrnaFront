@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+// Font Awesome
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+// MDB SCSS
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+:root {
+  --primaryColor: #324fa6;
+  --secundaryColor: #f2cd5c;
+  --terciaryColor: #03a62c;
+  --DetailsColor: #1e3859;
+  --Details_2Color: #f29422;
+  --Details_3Color: #f2f2f2;
+  --Details_4Color: #3f3f42;
+}
+body {
+  background:var(--Details_3Color);
+}
+.titulo {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.btn-proprio {
+  color: var(--Details_3Color);
+  background-color: var(--DetailsColor);
+}
+.btn-proprio:hover {
+  background-color: var(--primaryColor);
+  color: var(--Details_3Color);
+
+}
+.btn-proprio:active {
+	position:relative;
+	top:1px;
+}

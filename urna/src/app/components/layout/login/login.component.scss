@@ -1,0 +1,42 @@
+.backgroundLogin{
+    background-color: rgb(255, 255, 255);
+}
+.totalTela{
+    height: 100vh;
+}
+
+
+// *********  Div Login **********
+
+.card{
+    height: 70vh;
+}
+img{
+    margin-left: 20px;
+    padding-top: 20px;
+    width: 5vw;
+}
+.card-top{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 30px; 
+    color: var(--DetailsColor);
+}
+.card-top p{
+    margin: 0;
+}
+.textinho{
+    font-size: 20px;
+}
+.alinhamento{
+    height: 85vh;
+}
+
+// *********  Div Justiça Eleitoral **********
+
+.backgroundImgLogin{
+    background-image: url(https://www.justicaeleitoral.jus.br/imagens/imagens/justica-eleitoral-conheca-a-origem-composicao-e-competencias/@@streaming/image/BANNER%2090%20ANOS%20VOTA%C3%87%C3%83O%20SLOGAN%20LOGOMARCA.jpg);
+    background-position-x: center;
+    background-size: cover;
+}

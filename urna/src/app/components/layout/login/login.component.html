@@ -1,0 +1,82 @@
+<div class=" d-flex totalTela">
+  <div class="container backgroundLogin col-6">
+    <div class="card-top">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Gov.br_logo.svg" class="imgLogin" alt="govBR">
+    </div>
+
+    <section class="container d-flex w-50 alinhamento align-items-center">
+      <div class="card-body">
+        <div class="card-top">
+          <p class="titulo">Bem Vindo a Urna Digital!</p>
+        </div>
+        <p class="titulo textinho">Entre com sua credencias</p>
+        <mdb-form-control class="mb-4">
+          <input
+            mdbInput
+            type="text"
+            name="username"
+            class="form-control"
+            [(ngModel)]="login.username"
+          />
+          <label mdbLabel class="form-label titulo" for="form2Example1"
+            >Usuário</label
+          >
+        </mdb-form-control>
+
+        <mdb-form-control class="mb-4">
+          <input
+            mdbInput
+            type="password"
+            (keyup.enter)="autenticar()"
+            name="senha"
+            class="form-control"
+            [(ngModel)]="login.senha"
+          />
+          <label mdbLabel class="form-label titulo" for="form2Example2"
+            >Senha</label
+          >
+        </mdb-form-control>
+
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input
+                mdbCheckbox
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="form2Example31"
+                [checked]="false"
+              />
+              <label class="form-check-label titulo" for="form2Example31">
+                Lembrar de Mim
+              </label>
+            </div>
+          </div>
+
+          <div class="col titulo">
+            <!-- Simple link -->
+            <a href="#!">Esqueci a senha</a>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <button
+          mdbRipple
+          type="button"
+          class="btn btn-proprio btn-block mb-4"
+          (click)="autenticar()"
+        ><strong>Entrar</strong>
+          
+        </button>
+      </div>
+    </section>
+
+
+  </div>
+  <div class="col-6 backgroundImgLogin">
+    
+  </div>
+</div>
