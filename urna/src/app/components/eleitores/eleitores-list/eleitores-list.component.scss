@@ -1,0 +1,15 @@
+.styleTable{
+    background-color: var(--tableColor);
+    color: var(--primaryColor);
+}
+caption{
+    border-radius: 20px 20px 0px 0px;
+    padding: 0rem 4rem;
+    p{
+        margin: 0%;
+        font-size: 4rem;
+    }
+}
+thead{
+    font-size: 1.4rem;
+}

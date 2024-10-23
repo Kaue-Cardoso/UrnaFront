@@ -14,7 +14,7 @@ export const routes: Routes = [
         {path: "dashboard", component: DashboardComponent},
         {path: "eleitores", component: EleitoresListComponent},
         {path: "eleitores/new", component: EleitoresFormComponent},
-        {path: "eleitores/edit/:id", component: EleitoresListComponent},
+        {path: "eleitores/edit/:id", component: EleitoresFormComponent},
         {path: "candidatos", component: CandidatosListComponent},
         {path: "candidatos/new", component: CandidatosFormComponent},
         {path: "candidatos/edit/:id", component: CandidatosListComponent},

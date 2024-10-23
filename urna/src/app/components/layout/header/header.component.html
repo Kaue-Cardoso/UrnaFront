@@ -1,25 +1,27 @@
 <div class="d-flex">
   <div [class.collapsed]="isSidebarCollapsed" class="sidebar bg-light">
     <div class="d-flex align-content-center">
-      <button (click)="toggleSidebar()" class="nada link-text titulo"><i class="fas fa-bars"></i></button>
+      <button (click)="toggleSidebar()" class="nada link-text titulo">
+        <i class="fas fa-sign-in-alt"></i>
+      </button>
       <!-- <p class="nada titulo menutitle"> Menu</p> -->
     </div>
     
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link active" href="#">
+        <a class="nav-link active" href="admin/dashboard">
           <i class="fas fa-chart-pie"></i>
           <span class="link-text titulo">Dashboard</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="admin/eleitores">
           <i class="fas fa-user"></i>
           <span class="link-text titulo">Eleitores</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="admin/candidatos">
           <i class="fas fa-user-check"></i>
           <span class="link-text titulo">Candidatos</span>
         </a>
@@ -34,6 +36,12 @@
         <a class="nav-link" href="#">
           <i class="fas fa-chart-line"></i>
           <span class="link-text titulo">Apuração</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="link-text titulo">Sair</span>
         </a>
       </li>
     </ul>

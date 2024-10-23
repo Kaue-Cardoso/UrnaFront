@@ -7,6 +7,10 @@
     background-color: #f8f9fa;
     padding-top: 20px;
     transition: width 0.3s ease;
+
+    .nav{
+      margin-top: 50px;
+    }
   
     .nav-link {
       display: flex;
@@ -55,7 +59,9 @@
       margin-left: 20px;
     }
   }
-
+  .fa-sign-in-alt{
+    transform: rotate(180deg);
+  }
   .d-flex{
     padding: 10px;
   }

@@ -1,1 +1,63 @@
-<p>eleitores-form works!</p>
+<div class="container card">
+    <div class="card-body">
+        <h5>{{ tituloComponente }}</h5>
+        <form #formulario1="ngForm">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+                <div class="col">
+                    <mdb-form-control>
+                        <input [(ngModel)]="eleitor.nomeCompleto" mdbInput required pattern=".*\S+.*" type="text"
+                            class="form-control" name="nomeCompleto" />
+                        <label mdbLabel class="form-label" for="nomeCompleto">Nome Completo</label>
+                    </mdb-form-control>
+                </div>
+                <div class="col">
+                    <mdb-form-control>
+                        <input [(ngModel)]="eleitor.cpf" mdbInput pattern=".*\S+.*" required type="text" class="form-control"
+                            name="cpf" />
+                        <label mdbLabel class="form-label" for="cpf">CPF</label>
+                    </mdb-form-control>
+                </div>
+            </div>
+
+            <!-- Text input -->
+            <mdb-form-control class="mb-4">
+                <input [(ngModel)]="eleitor.profissao" mdbInput pattern=".*\S+.*" type="text" class="form-control"
+                    name="profissao" />
+                <label mdbLabel class="form-label" for="profissao">Profissão</label>
+            </mdb-form-control>
+
+            <!-- Text input -->
+            <mdb-form-control class="mb-4">
+                <input [(ngModel)]="eleitor.celular" mdbInput pattern=".*\S+.*" type="text" class="form-control"
+                    name="celular" />
+                <label mdbLabel class="form-label" for="celular">Celular</label>
+            </mdb-form-control>
+
+            <!-- Email input -->
+            <mdb-form-control class="mb-4">
+                <input [(ngModel)]="eleitor.telefoneFixo" mdbInput pattern=".*\S+.*" type="text" class="form-control"
+                    name="telefoneFixo" />
+                <label mdbLabel class="form-label" for="telefoneFixo">Telefone Fixo</label>
+            </mdb-form-control>
+
+            <!-- Number input -->
+            <mdb-form-control class="form-outline mb-4">
+                <input [(ngModel)]="eleitor.email" mdbInput pattern=".*\S+.*" type="text" class="form-control"
+                    name="email" />
+                <label mdbLabel class="form-label" for="email">email</label>
+            </mdb-form-control>
+
+            <!-- Submit button -->
+            @if(eleitor.id == 0){
+            <button [disabled]="!formulario1.valid" (click)="save()" class="btn btn-primary">
+                Salvar
+            </button>
+            }@else{
+            <button [disabled]="!formulario1.valid" (click)="update()" class="btn btn-sucess">
+                Atualizar
+            </button>
+            }
+        </form>
+    </div>
+</div>
