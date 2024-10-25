@@ -17,4 +17,4 @@ Bando de Dados: *Mysql v8.0.39*
 *Urna*
 ![Captura de tela 2024-10-25 185103](https://github.com/user-attachments/assets/86cf53f6-8931-47fd-aa5b-e649405dbe9a)
 *Apuracao*
-![Captura de tela 2024-10-25 185118](https://github.com/user-attachments/assets/630eee6c-491e-4a8f-97e4-fd57f85d26b0)
+![Captura de tela 2024-10-25 190747](https://github.com/user-attachments/assets/a6c96611-ab64-4708-8a08-3a2c53d386c2)
