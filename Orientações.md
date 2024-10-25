@@ -1,7 +1,11 @@
 Sistema em desenvolvimento para pratica e desenvolvimento de atividades de FrontEnd com FrameWorks.
+<br>
 Framework FrontEnd: *Angular v18.2.8*
+<br>
 Framework BackEnd: *SpringBoot v3.3.3*
+<br>
 Bando de Dados: *Mysql v8.0.39*
+<br>
 
 
 *Captura de Telas do Sistema*
