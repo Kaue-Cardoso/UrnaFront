@@ -6,12 +6,16 @@ import { EleitoresListComponent } from './components/eleitores/eleitores-list/el
 import { EleitoresFormComponent } from './components/eleitores/eleitores-form/eleitores-form.component';
 import { CandidatosListComponent } from './components/candidatos/candidatos-list/candidatos-list.component';
 import { CandidatosFormComponent } from './components/candidatos/candidatos-form/candidatos-form.component';
+import { VotoComponent } from './components/voto/voto.component';
+import { ApuracaoComponent } from './components/apuracao/apuracao.component';
 
 export const routes: Routes = [
     {path: "", redirectTo:"login", pathMatch:"full"},
     {path: "login", component: LoginComponent},
+    {path: "voto", component: VotoComponent},
     {path: "admin", component: PrincipalComponent, children:[
         {path: "dashboard", component: DashboardComponent},
+        {path: "apuracao", component: ApuracaoComponent},
         {path: "eleitores", component: EleitoresListComponent},
         {path: "eleitores/new", component: EleitoresFormComponent},
         {path: "eleitores/edit/:id", component: EleitoresFormComponent},

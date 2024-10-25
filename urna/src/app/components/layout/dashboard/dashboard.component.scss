@@ -1,0 +1,19 @@
+.areaTotal{
+    height: 80vh;
+    padding: 2% 5%;
+}
+.table-overflow {
+    height:60vh;
+    overflow-y:auto;
+}
+.styleTable{
+    background-color: var(--tableColor);
+    color: var(--primaryColor);
+}
+tbody{
+    padding-bottom: 10px;
+}
+/* Works on Firefox */
+* {
+    scrollbar-width: none;
+    }

@@ -1,0 +1,37 @@
+.areaTotal {
+  height: 100vh;
+  padding: 2% 5%;
+}
+.urna-container {
+  width: 80%;
+  padding: 20px;
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.display {
+  padding: 0.5rem;
+}
+.input-numero {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.botoes-container {
+  padding: 0.5rem;
+  width: 30%;
+}
+.btn-numeros{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+.btn-numeros button {
+  aspect-ratio: 1 / 1; 
+  font-size: 1rem; /* Tamanho mínimo 1rem, máximo 2rem, aumenta com a largura */
+  background-color: var(--DetailsColor);
+  color: var(--Details_3Color);
+}

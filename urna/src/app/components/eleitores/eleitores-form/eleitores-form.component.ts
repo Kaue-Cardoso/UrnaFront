@@ -48,37 +48,55 @@ export class EleitoresFormComponent {
     })
   }
 
-  save(){
-
+  // save(){
+  //   this.eleitorService.save(this.eleitor).subscribe({
+  //     next: mensagem => {
+  //       Swal.fire({
+  //         title: mensagem,
+  //         icon: "success"
+  //       }).then(() => {
+  //         this.router.navigate(['admin/eleitores']);
+  //       });
+  //     },
+  //     error: erro => {
+  //       alert('Não Salvou');
+  //     }
+  //   });
+  // }
+  save() {
     this.eleitorService.save(this.eleitor).subscribe({
-      next: mensagem => {
+      next: resposta => {
         Swal.fire({
-          title: mensagem,
+          title: 'Eleitor cadastrado com sucesso!',
           icon: "success"
         }).then(() => {
           this.router.navigate(['admin/eleitores']);
         });
       },
       error: erro => {
-        alert('Não Salvou');
+        Swal.fire({
+          title: erro.error,
+          icon: 'error'
+        });
       }
     });
-
-
   }
 
   update(){
-    this.eleitorService.update(this.eleitor).subscribe({
-      next: mensagem =>{
+    this.eleitorService.save(this.eleitor).subscribe({
+      next: resposta => {
         Swal.fire({
-          title: mensagem,
+          title: 'Eleitor atualizado com sucesso!',
           icon: "success"
         }).then(() => {
           this.router.navigate(['admin/eleitores']);
         });
       },
-      error: erro =>{
-        alert('Não Foi Possivel Editar');
+      error: erro => {
+        Swal.fire({
+          title: 'Erro ao salvar eleitor',
+          icon: 'error'
+        });
       }
     });
   }

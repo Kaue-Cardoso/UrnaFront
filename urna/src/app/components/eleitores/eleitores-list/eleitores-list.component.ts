@@ -19,10 +19,10 @@ export class EleitoresListComponent {
   eleitorService = inject(EleitorService);
 
   constructor(){
-    this.findAll();
+    this.findAllEleitores();
   }
-  findAll(){
-    this.eleitorService.findAll().subscribe({
+  findAllEleitores(){
+    this.eleitorService.findAllEleitores().subscribe({
       next: list => {
         this.lista = list;
       },
@@ -47,7 +47,7 @@ export class EleitoresListComponent {
         this.eleitorService.delete(eleitor.id).subscribe({
           next: mensagem =>{
             Swal.fire(mensagem, "", "success");
-            this.findAll();
+            this.findAllEleitores();
           },
           error: erro => {
             alert('Erro ao deletar');

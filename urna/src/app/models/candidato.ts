@@ -2,7 +2,7 @@ export class Candidato {
   id!: number;
   nomeCompleto!: string;
   cpf!: string;
-  numero!: number;
+  numero!: number | null;
   funcao!: number;
   status!: string;
   votosTotais!: number;
@@ -11,7 +11,7 @@ export class Candidato {
     id: number,
     nomeCompleto: string,
     cpf: string,
-    numero: number,
+    numero: number | null,
     funcao: number,
     status: string,
     votosTotais: number

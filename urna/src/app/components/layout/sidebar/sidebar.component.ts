@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from '../header/header.component';
 import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
-import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterOutlet, MdbRippleModule, MdbDropdownModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  imports: [RouterOutlet, HeaderComponent, MdbDropdownModule],
+  templateUrl: './sidebar.component.html',
+  styleUrl: './sidebar.component.scss'
 })
-export class HeaderComponent {
-
+export class SidebarComponent {
   isSidebarCollapsed = false;
 
   toggleSidebar() {

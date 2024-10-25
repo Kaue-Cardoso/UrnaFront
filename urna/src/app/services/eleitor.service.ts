@@ -14,7 +14,7 @@ export class EleitorService {
 
   constructor() { }
 
-  findAll(): Observable<Eleitor[]>  {
+  findAllEleitores(): Observable<Eleitor[]>  {
     return this.http.get<Eleitor[]>(this.API+"/findAll");
   }
 

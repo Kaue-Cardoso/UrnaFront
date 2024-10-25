@@ -1,0 +1,59 @@
+@media (max-height: 650px) {
+    .tituloTable{
+        font-size: 2.5rem !important ;
+    }
+}
+.card{
+    height: 70vh;
+    margin: auto;
+   }
+   .tituloTable{
+       margin: 0%;
+       font-size: 4rem;
+       border-radius: 20px 20px 0px 0px;
+       padding: 0rem 4rem;
+   }
+   .table-overflow {
+       max-height:60vh;
+       overflow-y:auto;
+   }
+   .styleTable{
+       background-color: var(--tableColor);
+       color: var(--primaryColor);
+   }
+   thead{
+       font-size: 1.4rem;
+   }
+   tbody{
+       padding-bottom: 10px;
+   }
+   /* Works on Firefox */
+   * {
+       scrollbar-width: none;
+       }
+       .btn-more{
+   
+           padding: 5px;
+   
+       }
+       .balbal{
+           height: 35px;
+           width: 35px;
+           font-size: 14px;
+           border: none;
+   
+           a{
+               color: var(--Details_3Color);
+           }
+          }
+          .grid-container {
+           display: grid;
+           grid-template-columns: auto auto auto auto auto;
+           padding: 0.5rem 1.5rem;
+           gap: 5rem;
+         }
+         .grid-item {
+           padding-top: 5px;
+           text-align: center;
+   
+         }

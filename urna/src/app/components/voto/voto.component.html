@@ -1,0 +1,34 @@
+<div class="d-flex justify-content-center align-items-center areaTotal">
+    <div class="urna-container">
+        <div class="urna-header">Urna Eletrônica</div>
+        <div class="d-flex justify-content-center">
+            <div class="display align-items-stretch d-flex">
+                
+                <div class="">
+                    <input [(ngModel)]="cpfEleitor" mdbInput required pattern="\d{11}" type="text" class="input-numero"
+                    name="cpfEleitor" />
+                    <label mdbLabel class="form-label" for="cpfEleitor">CPF do Eleitor</label>             
+                    <input type="text" [(ngModel)]="numeroPrefeito" maxlength="2" readonly class="input-numero" />
+                    <label>Número do Prefeito:</label>
+  
+                    <input type="text" [(ngModel)]="numeroVereador" maxlength="5" readonly class="input-numero" />
+                    <label>Número do Vereador:</label>
+                </div>
+            </div>
+    
+            <div class="botoes-container" >
+                <div class="btn-numeros d-flex mb-2">
+                    @for (numero of numeros; track $index) {
+                    <button class="btn col-3" (click)="adicionarNumero(numero)">{{ numero }}</button>
+                    }
+                </div>
+                <div class="row justify-content-around gap-1">
+                    <button class="btn btn-danger col-5" (click)="corrigir()">Corrigir</button>
+                    <button class="btn btn-success col-5" (click)="confirmar()">Confirmar</button>
+                </div>
+            </div>
+    
+            
+        </div>
+    </div>
+</div>

@@ -1,16 +1,126 @@
-<div>
-  <div class="d-flex gap">
-    <div class="card w-25 text-center">
-      <div class="card-header">Eleitores Aptos</div>
-      <div class="card-body">
-        <h5 class="card-title">5</h5>
+<div class="areaTotal">
+
+  <div class="row gap-2">
+    <div class="col-xl-3">
+      <div class="row gx-0 gap-2">
+        <div class="card text-center">
+          <div class="card-header">Eleitores</div>
+          <div class="card-body">
+            <div class="table-responsive-lg">
+              <table class="table align-middle mb-0">
+                <thead class="text-center styleTable titulo">
+                  <tr class="">
+                    <th>Cadastrados</th>
+                    <th>Aptos</th>
+                  </tr>
+                </thead>
+                <tbody class="text-center table-striped">
+                  <tr>
+                    <td>
+                      <p class="fw-bold mb-1">{{  listaEleitores.length }}</p>
+                    </td>
+                    <td>
+                      <p class="fw-normal mb-1">{{ getQuantidadeAptos() }}</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+  
+        <div class="card text-center">
+          <div class="card-header">Candidatos</div>
+          <div class="card-body">
+            <div class="table-responsive-lg">
+              <table class="table align-middle mb-0">
+                <thead class="text-center styleTable titulo">
+                  <tr class="">
+                    <th>Cadastrados</th>
+                    <th>Ativos</th>
+                  </tr>
+                </thead>
+                <tbody class="text-center table-striped">
+                  <tr>
+                    <td>
+                      <p class="fw-bold mb-1">{{  listaCandidatos.length }}</p>
+                    </td>
+                    <td>
+                      <p class="fw-normal mb-1">{{ listaCandidatosAtivos.length}}</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+      </div>    
+  </div>
+
+    <div class="col-xl-4">
+      <div class="card">
+        <div class="card-header">Candidatos a Prefeito</div>
+        <div class="card-body">
+          
+          <div class="table-overflow table-responsive-sm">
+            <table class="table align-middle mb-0 caption-top table-hover">
+              <thead class="text-center styleTable titulo sticky-top">
+                <tr class="">
+                  <th>Nome</th>
+                  <th>Numero Candidato</th>
+                </tr>
+              </thead>
+              <tbody class="text-center table-striped">
+                @for (candidato of listaCandidatos; track $index){
+                  @if(candidato.funcao == 1){
+                    <tr>
+                      <td>
+                        <p class="fw-bold mb-1">{{ candidato.nomeCompleto }}</p>
+                      </td>
+                      <td>
+                        <p class="fw-normal mb-1">{{ candidato.numero }}</p>
+                      </td>
+                    </tr>
+                  }
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card w-25 text-center">
-      <div class="card-header">Candidatos Ativos</div>
-      <div class="card-body">
-        <h5 class="card-title">5</h5>
+
+    <div class="col-xl-4 ">
+      <div class="card">
+        <p class="card-header">Candidatos a Vereador</p>
+        <div class="card-body">
+          <div class="table-overflow table-responsive-sm">
+            <table class="table align-middle mb-0 caption-top table-hover">
+              <thead class="text-center styleTable titulo sticky-top">
+                <tr class="">
+                  <th>Nome</th>
+                  <th>Numero Candidato</th>
+                </tr>
+              </thead>
+              <tbody class="text-center table-striped">
+                @for (candidato of listaCandidatos; track $index){
+                  @if(candidato.funcao == 2){
+                <tr>
+                  <td>
+                    <p class="fw-bold mb-1">{{ candidato.nomeCompleto }}</p>
+                  </td>
+                  <td>
+                    <p class="fw-normal mb-1">{{ candidato.numero }}</p>
+                  </td>
+                </tr>
+              }
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 </div>

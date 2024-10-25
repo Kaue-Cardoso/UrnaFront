@@ -20,14 +20,12 @@ export class LoginComponent {
   autenticar() {
     if (this.login.username == 'admin' && this.login.senha == 'admin') {
       Swal.fire({
-        title: 'Good job!',
         text: 'Logado com sucesso',
         icon: 'success',
       });
       this.router.navigate(['/admin/dashboard']);
     } else {
       Swal.fire({
-        title: 'Erro',
         text: 'Usuario nao autenticado',
         icon: 'error',
       });
