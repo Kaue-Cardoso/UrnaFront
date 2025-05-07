@@ -1,4 +1,4 @@
-Sistema desenvolvido para pratica e desenvolvimento de atividades de FrontEnd com FrameWorks para o 4º período de Engenharia de Software, Uniamerica.
+Sistema desenvolvido para pratica e desenvolvimento de atividades de FrontEnd com FrameWorks para o 4º período(2024) de Engenharia de Software, Uniamerica.
 <br>
 Framework FrontEnd: *Angular v18.2.8*
 <br>
